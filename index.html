@@ -1,0 +1,157 @@
+ <html>
+<head>
+<title>login</title>
+ <link rel="stylesheet" href="css/style.css"/>
+ <script src="js/login.js"></script>
+
+
+
+<style>
+
+   
+ body
+{
+background-image:url(https://image.pushauction.com/0/0/15bfc40c-7524-4d7b-b33f-59ee0725ab2d/85d81073-012d-4237-a8a6-487adb5b974f.jpg);
+ background-repeat: repeat-y;
+  opacity:20;
+background-size:cover;
+
+}
+
+ h2{
+ padding: 30px 35px;
+margin: -10px -50px;
+text-align:center;
+border-radius: 10px 10px 0 0;
+}
+hr{
+margin: 10px -50px;
+border: 0;
+border-top: 1px solid #ccc;
+margin-bottom: 20px;
+}
+div.container{
+width: 900px;
+height: 610px;
+margin:35px auto;
+font-family: 'Raleway', sans-serif;
+}
+div.main{
+width: 450px;
+padding: 10px 50px 25px;
+border: 2px solid gray;
+border-radius: 10px;
+font-family: raleway;
+float:left;
+ margin-top:50px;
+}
+input[type=text],input[type=password]{
+width: 110%;
+height: 30px;
+padding: 5px;
+margin-bottom: 20px;
+margin-top: 5px;
+border: 2px solid #ccc;
+color: #4f4f4f;
+font-size: 16px;
+border-radius: 5px;
+}
+label{
+color: #464646;
+text-shadow: 0 1px 0 #fff;
+font-size: 14px;
+font-weight: bold;
+}
+center{
+font-size:32px;
+}
+.note{
+color:red;
+}
+.valid{
+color:green;
+}
+.back{
+text-decoration: none;
+border: 1px solid rgb(0, 143, 255);
+background-color: rgb(0, 214, 255);
+padding: 3px 20px;
+border-radius: 2px;
+color: black;
+}
+input[type=button]{
+font-size: 24px;
+background: GREEN;
+border: 1px solid #e5a900;
+color: WHITE;
+font-weight: bold;
+cursor: pointer;
+width: 100%;
+border-radius: 5px;
+padding: 10px 0;
+outline:none;
+}
+input[type=button]:hover{
+background:RED;
+}
+
+
+</style>
+
+
+</head>
+<body>
+ 
+   <marquee width = "50%"><h1><font style="COLOR:red;font-size:70px">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp SHAKER'S CORNER </font></h1></marquee>
+
+<div class="container">
+<div class="main">
+<h1><font style="COLOR:BLACK;font-size:28px">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp LOGIN</h1>
+<form action="shakers.html" id="form_id" method="post" name="myform">
+<label><font style="COLOR:BLACK;font-size:24px"> USER NAME </label>
+<input type="text" name="username" id="username"/>
+<label><font style="COLOR:BLACK;font-size:24px">PASSWORD </label>
+<input type="password" name="password" id="password"/>
+<input type="button" value="LOGIN" id="submit" onclick="validate()"/></FONT>
+</form>
+ </div>
+</div>
+
+
+
+<script>
+
+var attempt = 3; // Variable to count number of attempts.
+// Below function Executes on click of login button.
+function validate(){
+var username = document.getElementById("username").value;
+var password = document.getElementById("password").value;
+if ( username == "aishu" && password == "aishu123"){
+alert ("CONGRADULATIONS...!!! YOU ARE LOGGED IN SUCCESFULLY..!!!");
+     window.open('shakers.html');/*opens the target page while Id & password matches*/
+return false;
+}
+else{
+attempt --;  // Decrementing by one.
+alert("You have "+attempt+" attempt....!!!");
+// Disabling fields after 3 attempts.
+if( attempt == 0){
+document.getElementById("username").disabled = true;
+document.getElementById("password").disabled = true;
+document.getElementById("submit").disabled = true;
+alert("SORRY...!!! YOU ARE BLOCKED...!!");
+
+return false;
+}
+}
+}
+
+</script>
+
+ 
+
+
+</body>
+</html>
