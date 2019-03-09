@@ -1,0 +1,123 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CONTACT US</title>
+<link rel='stylesheet' href='form-style.css' type='text/css' />
+<head>
+<style>
+
+
+body
+{
+background-image:url(https://i.pinimg.com/originals/a6/bf/1c/a6bf1ca75ad990e12c886616b5adfa02.gif);
+ background-repeat:repeat-y;
+  opacity:20;
+background-size:cover;
+
+}
+
+
+  h2{ 
+ color: RED;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;   text-align: center;
+  font-size:40px;
+
+} 
+
+textarea
+{
+    overflow-y:scroll;
+}
+
+ li {
+  float: LEFT;
+  width:250px;
+  height:40px;
+  background-color:WHITE;
+ font: italic bold 12px/30px Georgia, serif;
+  opacity:0.78;
+  line-height:40px;
+  text-align:CENTER;
+  font-size:38px;
+  margin-right:50px;
+  list-style: none;
+  margin:1px;
+  padding:0px;
+  
+}
+
+</style>
+</head>
+
+
+<body onload='document.form1.text1.focus()'>
+
+ <header>
+<nav>
+ 	 <li><a href="backpage.html">BACK</li>
+   	</a>	
+ </nav>
+</header>
+<div class="mail">
+<h2>CONTACT US...!!</H2>
+
+     <h6><font color="YELLOW" size="6px"><b>
+<U> PLEASE NOTE :</U>
+
+     <h6><font color="PINK" size="5px"><b>
+PHONE NUMBER MUST BE IN THIS FORMAT
+[ 1 . xxx-xxx-xxxx 2 . xxx.xxx.xxxx 3 . xxx xxx xxxx ]
+</font>
+
+<form name="form1" action="#">
+
+ 
+
+     <h3><font color="white" size="3px"><b>
+	 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	 MOBILE NUMBER
+  <input type='text' name='text1' PLACEHOLDER='xxx xxx xxxx' required/>
+ 
+</b></font></h6>
+
+
+ <h5><font color="white" size="3px"><b>
+	 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	 COMMENT 
+ 
+</b></font></h6>
+	 
+  
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+ 
+	<textarea id="textareaID" placeholder="Your Message" required></textarea>
+ <class="submit"><BR><BR>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="submit" name="submit" value="Submit" onclick="phonenumber(document.form1.text1)" />
+
+  </form>
+   <h5><font color="yellow" size="5px"><b><BR><BR>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCLICK BACK BUTTON AFTER SUBMITTING THE FORM...!!</b></h5>
+
+</div>
+<script>
+
+
+function phonenumber(inputtxt)
+{
+  var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+  if(inputtxt.value.match(phoneno))
+        {
+      return true;
+        }
+      else
+        {
+        alert("Not a valid Phone Number");
+        return false;
+        }
+}
+
+
+
+</script>
+
+</body>
+</html>

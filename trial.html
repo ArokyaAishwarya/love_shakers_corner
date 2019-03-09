@@ -1,0 +1,35 @@
+ 
+<html> 
+<head> 
+<script> 
+ function phonenumber(inputtxt)
+{
+  var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+  if((inputtxt.value.match(phoneno))
+        {
+      return true;
+        }
+      else
+        {
+        alert("message");
+        return false;
+        }
+}
+     
+    
+
+</script> 
+ 
+ 
+</style></head> 
+<body>  
+<form name="RegForm" action="" onsubmit="return phonenumber(inputtxt)" method="post">  
+
+    E-mail Address<span style="color:red">*</span>:
+    <input type="text" size=65 name=""><br>
+    
+ 			<input type="submit" value="Submit" name="Submit" style="background-color:black; color:white; border:none">          
+</pre>	
+</form> 
+</body> 
+</html> 

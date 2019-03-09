@@ -1,0 +1,162 @@
+body
+{
+background-image:url(https://png.pngtree.com/thumb_back/fw800/back_pic/05/05/71/2759686fc387962.jpg);
+height: 0%;
+margin:0px;
+  background-repeat: repeat-y;
+  background-size: cover;
+  position: relative;
+}
+
+
+  
+  
+p    {
+	color: red;
+	text-align: center;
+
+	}
+	
+
+
+
+ul  {
+  list-style: none;
+  margin:1px;
+  padding:0px;
+  
+}
+
+ul li {
+  float: LEFT;
+  width:250px;
+  height:40px;
+  background-color:black;
+ font: italic bold 12px/30px Georgia, serif;
+  opacity:0.78;
+  line-height:40px;
+  text-align:CENTER;
+  font-size:18px;
+  margin-right:5px;
+}
+ul li a 
+{
+   text-decoration:none;
+   color:white;
+   display:block;
+   
+}
+ul li a:hover
+{
+ background-color:blue;
+}
+ul li ul li
+{
+display:none;
+}
+ul li:hover ul li
+{
+display:block;
+}
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+ 
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.title
+{
+position:absolute;
+top:40%;
+
+}
+.title  h1
+{
+color:#fff;
+font-size:50px;
+}
+.button
+{
+position:absolute;
+line-height:40px;
+top:45%;
+left:72%;
+ 
+}
+.btn
+{
+border:1px solid #fff;
+padding:10px 30px;
+color:#fff;
+text-decoration:none;
+transition:0.6s ease;
+}
+.btn:hover
+{
+background-color:#fff;
+color:#000;
+}
+
+
+div.fixed {
+  position: fixed;
+  line-height:40px;
+top:35%;
+left:4%;
+  bottom: 10px;
+} 
+
+
+
+div.fixed1 {
+  position: fixed;
+  line-height:40px;
+top:60%;
+left:20%;
+  bottom: 10px;
+} 
+
+
+
+div.fixed2 {
+  position: fixed;
+  line-height:40px;
+top:60%;
+left:20%;
+  bottom: 10px;
+} 
+
+
+
+div.fixed3 {
+  position: fixed;
+  line-height:40px;
+top:48%;
+left:5%;
+  bottom: 10px;
+} 
+
+
+
+div.fixed4 {
+  position: fixed;
+  line-height:40px;
+top:8%;
+left:1%;
+  bottom: 10px;
+} 
+
+
+div.fixed5 {
+  position: fixed;
+  line-height:40px;
+top:8%;
+left:50%;
+  bottom: 10px;
+} 
+

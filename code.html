@@ -1,0 +1,38 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+  </head><br><body onload='document.form1.text1.focus()'>
+  
+<div class="mail">
+
+<h2>Input Credit Card No.[Starting with 6011, length 16 digits or starting with 5, length 15 digits (Discover) and Submit</h2>
+
+<form name="form1" action="#">
+
+<input type='text' name='text1' />
+
+<class="submit"><input type="submit" name="submit" value="Submit" onclick="cardnumber(document.form1.text1)" />
+ </form>
+</div>
+<script>
+
+function cardnumber(inputtxt)
+{
+  var cardno = /^(?:6(?:011|5[0-9][0-9])[0-9]{12})$/;
+  
+  
+  if(inputtxt.value.match(cardno))
+        {
+      return true;
+        }
+      else
+        {
+        alert("The card number can be Start with 6011, length 16 digits or Starting with 5 , length 15 digits ");
+        return false;
+        }
+}
+  </script>
+</body>
+</html>

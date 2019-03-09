@@ -1,0 +1,234 @@
+<HTML>
+<TITLE>GATEWAY PAT</TITLE>
+<link href="shakers.html">
+ 
+<HEAD>
+<STYLE>
+  
+ body
+{
+background-image:url(https://image.pushauction.com/0/0/15bfc40c-7524-4d7b-b33f-59ee0725ab2d/85d81073-012d-4237-a8a6-487adb5b974f.jpg);
+ background-repeat: repeat-y;
+  opacity:20;
+background-size:cover;
+
+}
+
+ h2{ 
+ color: RED;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;   text-align: center;
+  font-size:70px;
+
+} 
+ 
+
+
+.col-50 {
+   flex: 50%;
+ 
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 10%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+ 
+</style>
+</head>
+<body>
+<body onload='document.form1.text1.focus()'>
+  <form name="form1" action="#">
+
+<div class="col-50">
+            <h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPAYMENT GATEWAY</h2>
+            <label for="fname"><B>ACCEPTED CARDS</B></label>
+            <div class="icon-container">
+               
+			   
+			   
+            </div>
+                    <b>NAME ON CARD &nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="text" name="Name" > </p><br>	 
+</b>
+<script>
+
+function FORMS()								 
+{ 
+	var name = document.forms["RegForm"]["Name"];			 
+ 
+	if (name.value == "")								 
+	{ 
+		window.alert("Please enter your name."); 
+		name.focus(); 
+		}
+			return true; 
+}
+		</script>
+ 			
+		
+ 
+            <label for="cname"><b>CARD NUMBER</b>&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+<input type='text' name='text1' / placeholder="6011************" required>
+
+ </form>
+</div>
+<script>
+ 
+function cardnumber(inputtxt)
+{
+  var cardno = /^(?:6(?:011|5[0-9][0-9])[0-9]{12})$/;
+  
+  
+  if(inputtxt.value.match(cardno))
+        {
+      return true;
+        }
+      else
+        {
+        alert("The card number can be Start with 6011, length 16 digits or Starting with 5 , length 15 digits ");
+        return false;
+        }
+}
+  </script>
+			
+			
+			
+			
+			
+			<label for="expmonth"><b>EXPIRY MONTH</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+          
+   <select name="1">
+    <option value="Y">JANUARY</option>
+    <option value="H">FEBRUARY</option>
+    <option value="f">AMRCH</option>
+    <option value="a">APRIL</option>
+     <option value="vo">MAY</option>
+    <option value="B">JUNE</option>
+    <option value="f ">JULY</option>
+    <option value="a ">AUGUST</option>   
+	<option value=" N">SEPTEMBER</option>
+
+	    <option value=" H">OCTOBER</option>
+    <option value="i">NOVEMBER</option>
+    <option value="i">DECEMBER</option>
+
+  </select>
+		 
+		   </label>
+		   
+		   
+            <div class="row">
+              <div class="col-50">
+			  
+                <label for="expyear"><b><BR>EXPIRY YEAR</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+ 				   <select name="1">
+
+					    <option value=" H">2010</option>
+					    <option value=" H">2011</option>
+					    <option value=" H">2012</option>
+					    <option value=" H">2013</option>
+					    <option value=" H">2014</option>
+					    <option value=" H">2015</option>
+					    <option value=" H">2016</option>
+					    <option value=" H">2017</option>
+					    <option value=" H">2018</option>
+					    <option value=" H">2019</option>
+					    <option value=" H">2020</option>
+
+				
+				 </select>
+				
+				</label>
+              </div>
+			  
+			  
+              <div class="col-50"><BR>
+                <label for="cvv"><b>CVV</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+ 
+ 
+ 
+<input id="numb" name="firstname" placeholder="201" maxlength="3" required>	
+
+
+ 
+ <class="submit"><input type="submit" name="submit" value="verify" onclick="cardnumber(document.form1.text1)" />
+
+<SCRIPT>	
+ function validateForm(){
+    var nameRegex = /^[a-zA-Z\-]+$/;
+    var validfirstUsername = document.frm.firstName.value.match(nameRegex);
+    if(validUsername == null){
+        alert("Your first name is not valid. Only characters A-Z, a-z and '-' are  acceptable.");
+        document.frm.firstName.focus();
+        return false;
+    }
+}
+  </SCRIPT>
+ 	
+				</label>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+		
+        <label>
+		</DIV>
+		  
+  <div class="demo">
+   <footer>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbspCopyright &copy; 2019 SHAKER'S CORNER , All Rights are Reserved</FONT></footer>
+
+ 
+</div>
+		
+		</body>
+		</html>

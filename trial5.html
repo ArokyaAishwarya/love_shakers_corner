@@ -1,0 +1,61 @@
+  <html>
+<body>
+<script>  
+function validateform(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+} 
+  return false;  
+  }  
+}  
+</script>  
+<body>  
+<form name="myform" method="post"  onsubmit="return validateform()" >  
+Name: <input type="text" name="name"><br/>  
+ 
+<input type="submit" value="register">  
+</form>  
+</body>
+</html>
+
+ 
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+ 
+ 
+ if(inputtext)
+ {
+ var letters=/[A-Z][A-Z]/;
+if(inputtext.match(letters))
+return true;
+else
+{
+alert('invalid');
+ return false;
+}
+  
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

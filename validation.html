@@ -1,0 +1,38 @@
+ <script type="text/javascript">
+function validation()
+{
+var a = document.form.name.value;
+if(a=="")
+{
+alert("Please Enter Your Name");
+document.form.name.focus();
+return false;
+}
+if(!isNaN(a))
+{
+alert("Please Enter Only Characters");
+document.form.name.select();
+return false;
+}
+if ((a.length < 5) || (a.length > 15))
+{
+alert("Your Character must be 5 to 15 Character");
+document.form.name.select();
+return false;
+}
+}
+</script>
+</head>
+<body>
+<form name="form" method="post" onsubmit="return validation()">
+<tr>
+<td> Your Name:</td>
+<td><input type="text" name="name""></td>
+</tr>
+<tr>
+<td></td>
+<td><input type="submit" name="sub" value="Submit"></td>
+</tr>
+</form>
+</body>
+</html>

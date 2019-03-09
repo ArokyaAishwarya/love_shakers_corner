@@ -1,0 +1,130 @@
+<html>
+<title>GALLERY</title>
+<link href="shakers.html">
+<link href="shakers_css.css" rel="stylesheet" >
+
+<head>
+<style>
+ 
+div.fixed {
+   position: absolute;
+  line-height:40px;
+top:-2%;
+left:2%;
+ } 
+
+ h2{ 
+ color: RED;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;   text-align: center;
+  font-size:70px;
+
+} 
+ .mySlides {
+ 
+ display:none;
+ }
+  
+div.containerAAA{
+   position:absolute;
+ top:43%;
+left:22%;
+ }
+ 
+ body
+{
+background-image:url(https://image.pushauction.com/0/0/15bfc40c-7524-4d7b-b33f-59ee0725ab2d/85d81073-012d-4237-a8a6-487adb5b974f.jpg);
+ background-repeat: repeat-y;
+  opacity:20;
+background-size:cover;
+
+}
+ 
+div.containerAAA{
+   position:absolute;
+ left:22%;
+ }
+</style>
+</head>
+<body>
+
+
+
+<div class="fixed"><br>
+  
+ <ul>
+  <li><a href="home_shakes.html" >HOME</a>
+  <ul>
+	 <li><a href="about_us_a.html">ABOUT US</a>
+
+</ul></li>
+
+<li><a>MENU</a>
+   <ul>
+	 <li><a href="classic_shake.html">CLASSIC SHAKES</a></li>  
+	 <li><a href="fresh_juice.html"> FRESH JUICES</a></li>  
+	 <li><a href="falooda.html">ROYAL FALOODA</a></li>
+	 <li><a href="moktails.html">MOCKTAILS</a></li>  
+	 <li><a href="ice_gola.html">ICE GOLA</a></li> 
+</ul>
+   </li>
+   
+      
+  <li><a href="gallery_shake.html">GALLERY</a></li>
+
+
+ 
+<li><a href="awards.html">AWARDS</a></li>
+ 
+ 
+<li><a href="quick.html">CONTACT US</a>
+ </li>
+ 
+
+</UL>
+    
+ </div>
+ 
+ <a href="GALLERY"></a>
+
+  
+ 
+  <BR><br><br><br><br><br><br><br><br><br>
+ <H2>OUR GALLERY</H2>
+  
+
+<div class="containerAAA">  <BR><br><br><br><br><br><br><br><br><br>
+  <BR><br><br><br><br><br><br><br><br><br>  <BR>
+
+  <img class="mySlides w3-animate-top" src="https://image3.mouthshut.com/images/ImagesR/2017/8/The-ThickShake-Factory-Nungambakkam-Chennai-925879616-4671724-1.jpg" style="height:400px;width:800px" border="5">
+  <img class="mySlides w3-animate-bottom" src="https://www.smergers.com/media/businessphoto/764480-24295286648.jpg" style="height:400px;width:800px" border="5">
+  <img class="mySlides w3-animate-top" src="C:\Users\My Computer\Downloads\image (3).png" style="height:400px;width:800px" border="5">
+  <img class="mySlides w3-animate-bottom" src="C:\Users\My Computer\Downloads\image (4).png" style="height:400px;width:800px" border="5">
+    <img class="mySlides w3-animate-bottom" src="https://farm4.staticflickr.com/3862/14581091439_6b13962e0e.jpg" style="height:400px;width:800px" border="5">
+
+	  <img class="mySlides w3-animate-bottom" src="https://3.imimg.com/data3/QB/EE/MY-7899221/ice-gola-making-machine-500x500.jpg" style="height:400px;width:800px" border="5">
+
+ 
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2500);    
+}
+</script>  <BR><br><br><br><br><br><br><br><br><br>  <BR>
+  
+ 
+
+ </body>
+</html>
+  

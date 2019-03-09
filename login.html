@@ -1,0 +1,38 @@
+<html>
+<head>
+<script type="text/javascript">
+function validation()
+{
+var a = document.form.pass.value;
+if(a=="")
+{
+alert("Please Enter Your Password");
+document.form.pass.focus();
+return false;
+}
+if ((a.length < 4) || (a.length > 8))
+{
+alert("Your Password must be 4 to 8 Character");
+document.form.pass.select();
+return false;
+}
+}
+</script>
+</head>
+<body>
+<form name="form" method="post" onsubmit="return validation()">
+ 
+             <label for="fname"><B>PASSWORD</B></label>
+
+ <input type="password" name="pass""></td>
+</tr>
+<tr>
+<td></td>
+<td><input type="submit" name="sub" value="Submit"></td>
+</tr>
+</form>
+</body>
+</html>
+
+
+ 

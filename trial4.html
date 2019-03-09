@@ -1,0 +1,45 @@
+<HTML>
+<BODY>
+   
+   <form onsubmit="validate()">
+    
+   
+   <b>CARD NUMBER</b>&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+   <input type="text"id="phone-number" placeholder="phone-number"/> 
+   
+   
+  <input type="submit" />
+ </form>
+ 
+ 
+ 
+ <script>  
+  
+
+   
+   function validate()
+   {
+    
+   
+  var phoneNumber = document.getElementById('phone-number').value;
+   var phoneRGEX =/^\(?([0-9]{4})\)?[-]?([0-9]{4})[-]?([0-9]{4})[-]?([0-9]{4})$/
+    var phoneResult = phoneRGEX.test(phoneNumber);
+    
+   
+ if(phoneResult == false)
+{
+alert('Please enter a valid ');
+return false;
+}
+  
+  return true;
+}
+   
+  
+ 
+ 
+ 
+     
+</script>
+</BODY>
+</HTML>

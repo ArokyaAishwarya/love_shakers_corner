@@ -1,0 +1,32 @@
+
+<html>
+<head>
+
+
+</head>
+
+<script>  
+ function() {
+  if (this.value.length > 100) {
+    alert("stop");
+    $("#textareaID").val($("#textareaID").val().substring(0,100));
+  }
+};
+
+
+</script>
+<body>
+
+
+
+<form> 
+
+<textarea id="textareaID"></textarea>
+
+<input type="submit" name="sub" value="Submit">
+ </form>
+</body>
+</html>
+
+
+ 

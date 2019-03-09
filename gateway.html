@@ -1,0 +1,197 @@
+<HTML>
+<TITLE>GATEWAY PAT</TITLE>
+<link href="shakers.html">
+ 
+<HEAD>
+<STYLE>
+  
+ body
+{
+background-image:url(https://us.123rf.com/450wm/apostrophe/apostrophe1711/apostrophe171100088/89431193-plain-solid-light-blue-background-with-faint-texture.jpg?ver=6);
+ background-repeat: repeat-y;
+  opacity:20;
+background-size:cover;
+
+}
+
+ h2 { 
+ color: RED;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;   text-align: center;
+  font-size:70px;
+
+} 
+  
+input[type=text] {
+  width: 20%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+   background-color: yellow;
+  color: white;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+ 
+  
+</style>
+</head>
+<body>
+
+             <h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp PAYMENT GATEWAY</h2>
+			 			  			 
+			 
+			 
+            <forM="fname"><B><font style="color:black;font-size:22px"> 
+ACCEPTED CARDS</B></label></font>
+             
+			<br><img src="https://cdn.shopify.com/s/files/1/0888/5788/t/7/assets/visa.png?9082211240281137063" style="width:120px;height:60px;margin-left:225px;">
+
+			  			<img src="https://cdn.shopify.com/s/files/1/0888/5788/t/7/assets/mastercard.png?9082211240281137063" height="60px" width="120px">
+
+		  
+		  			   <form onsubmit="validate()" method="post">
+					   
+					   
+					     <font style="color:black;font-size:22px"> <B>  <br>NAME ON CARD</B></label></font>&nbsp&nbsp   &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+   <input type="text"id="name" placeholder="Aishwarya" required /> 
+
+
+   <font style="color:black;font-size:22px"> <B><br>
+CREDIT CARD NUMBER</B></label></font>&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+   <input type="text"id="phone-number"  placeholder="1111-2222-3333-4444" onsubmit="validate()" required/> 
+   
+ 
+			
+ <script>  
+  
+
+
+    function validate(){
+  var phoneNumber = document.getElementById('phone-number').value;
+  var postalCode = document.getElementById('postal-code').value;
+  var phoneRGEX =/^\(?([0-9]{4})\)?[-]?([0-9]{4})[-]?([0-9]{4})[-]?([0-9]{4})$/;
+  var postalRGEX = /^6\d{2}$/;
+  var phoneResult = phoneRGEX.test(phoneNumber);
+  var postalResult = postalRGEX.test(postalCode);
+   var Name=document.getElementById('name').value;
+   var NameRGEX =/^[A-Z]{10}$/;
+  var NameResult = NameRGEX.test(Name);
+
+  
+  
+if(phoneResult == false)
+{
+  alert('PLEASE ENTER THE VALID CARD NUMBER LIKE ( 1111-2222-3333-4444 ) ...!!!');
+return false;
+}
+ 
+if(postalResult == false)
+{
+ alert('CVV NUMBER MUST START WITH 6 FOLLOWED BY 2 OTHER DIGIT...!!!!');
+return false;
+}
+ 
+ 
+if(NameResult == false)
+{
+alert('NAME SHOULD BE IN UPPERCASE AND MUST BE 10 CHARACTERS IN LENGTH..!!');
+return false;
+}
+      window.open('billing.html');/*opens the target page while Id & password matches*/
+
+  return true;
+}
+
+  
+  
+   
+ 
+	</script>		  
+			  
+			  
+			  
+			<font style="color:black;font-size:22px"><BR>
+<b><BR>EXPIRY MONTH</b></font>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+          
+   <select name="1">
+    <option value="Y">JAN</option>
+    <option value="H">FEB</option>
+    <option value="f">MAR</option>
+    <option value="a">APR</option>
+     <option value="vo">MAY</option>
+    <option value="B">JUN</option>
+    <option value="f ">JUL</option>
+    <option value="a ">AUG</option>   
+	<option value=" N">SEP</option>
+
+	    <option value=" H">OCT</option>
+    <option value="i">NOV</option>
+    <option value="i">DEC</option>
+
+  </select>
+		 
+		   </label>
+		   
+		    
+			  
+                <font style="color:black;font-size:22px">
+<b>&nbsp&nbsp &nbsp&nbsp EXPIRY YEAR</b></font>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+ 				   <select name="1">
+
+					    <option value=" H">2010</option>
+					    <option value=" H">2011</option>
+					    <option value=" H">2012</option>
+					    <option value=" H">2013</option>
+					    <option value=" H">2014</option>
+					    <option value=" H">2015</option>
+					    <option value=" H">2016</option>
+					    <option value=" H">2017</option>
+					    <option value=" H">2018</option>
+					    <option value=" H">2019</option>
+					    <option value=" H">2020</option>
+
+				
+				 </select>
+				
+				</label>
+              </div>
+			  
+			  
+              <font style="color:black;font-size:22px"> <B>
+<BR><BR>CVV NUMBER</B></font>&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+ 
+ 
+ 
+   <input type="text" id="postal-code" placeholder="6**" required />
+
+ 
+ 
+
+  <BR><BR><BR>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+   
+   &nbsp&nbsp &nbsp&nbsp 
+ <input type="submit" value="PAY" name="Submit">	 
+   	
+				</label>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+		
+        <label>
+		</DIV>
+ 
+		</body>
+		</html>

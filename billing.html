@@ -1,0 +1,117 @@
+<html>
+<link href="shakers.html">
+
+<head>
+ <style>
+ 
+ body
+{
+background-image:url(https://image.pushauction.com/0/0/15bfc40c-7524-4d7b-b33f-59ee0725ab2d/85d81073-012d-4237-a8a6-487adb5b974f.jpg);
+ background-repeat: repeat-x;
+  opacity:20;
+background-size:cover;
+
+}
+
+ h2{ 
+ color: RED;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;   text-align: center;
+  font-size:60px;
+
+} 
+ 
+
+div.demo
+	{	background-color:black; 
+		color:white;
+		border:5px;
+		font-size:26px;
+	}
+
+    
+   
+</style>
+</head>
+<body>  
+
+<h2>BILLING ADDRESS</h2>
+
+<form onsubmit="validate()">
+  <p>
+   <font style="color:black;font-size:22px"> <B>  <br>
+   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+   &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+   PHONE NUMBER</B></font>&nbsp&nbsp <input type="text"id="phone-number" placeholder="111 222 3333" required /> 
+  </p>
+  
+  <p>
+     <font style="color:black;font-size:22px"> <B>  <br>
+	  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+   &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+ 	 &nbsp&nbsp POSTAL CODE</B></font>&nbsp&nbsp 
+  <input type="text" id="postal-code" placeholder="aa3456" required />
+  </p>
+  <p>
+          <font style="color:black;font-size:22px"> <B>  <br>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+   &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp		  
+   ADDRESS</B></font>&nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp 
+&nbsp&nbsp 
+  	<textarea id="textareaID" placeholder="Start Typing Your address..." required></textarea>
+
+  <br><br><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="submit" VALUE="SEND" />
+   </p>
+   
+
+ 
+</form>
+
+
+
+ <script> 
+
+ 
+ function validate(){
+  var phoneNumber = document.getElementById('phone-number').value;
+  var postalCode = document.getElementById('postal-code').value;
+  var phoneRGEX =/^\(?([0-9]{3})\)?[ ]?([0-9]{3})[ ]?([0-9]{4})$/;
+var postalRGEX = /^[a-z]{2}[0-9]{4}$/i;  
+var phoneResult = phoneRGEX.test(phoneNumber);
+  var postalResult = postalRGEX.test(postalCode);
+  
+ 
+if(phoneResult == false)
+{
+   alert('Oooops...!!! PLEASE ENTER THE VALID CARD NUMBER LIKE ( 111 222 3333 ) ...!!!');
+return false;
+}
+ 
+if(postalResult == false)
+{
+alert('Oooops...!!! POSTAL NUMBER MUST START WITH 2 ALPHABETS FOLLOWED BY 4 NUMBERS...!!');
+return false;
+} 
+      window.open('transaction.html');/*opens the target page while Id & password matches*/
+
+  return true;
+}
+
+
+
+</script> 
+
+
+
+
+
+</BODY>
+</HTML>

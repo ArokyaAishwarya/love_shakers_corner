@@ -1,0 +1,48 @@
+<html>
+<head>
+<script type="text/javascript">
+function Validation()
+{
+var a = document.form.phone.value;
+if(a=="")
+{
+alert("please Enter the Contact Number");
+document.form.phone.focus();
+return false;
+}
+if(isNaN(a))
+{
+alert("Enter the valid Mobile Number(Like : 9566137117)");
+document.form.phone.focus();
+return false;
+}
+if((a.length < 1) || (a.length > 10))
+{
+alert(" Your Mobile Number must be 1 to 10 Integers");
+document.form.phone.select();
+return false;
+}
+}
+</script>
+</head>
+<body>
+<form name="form" method="post" onsubmit="return Validation()">
+<tr>
+<td> Mobile No:</td>
+<td><input type="text" name="phone"></td>
+</tr>
+<tr>
+<td></td>
+<td><input type="submit" name="sub" value="Submit"></td>
+</tr>
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+ 
